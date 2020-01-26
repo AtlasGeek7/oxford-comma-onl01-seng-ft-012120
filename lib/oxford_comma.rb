@@ -1,9 +1,8 @@
 def oxford_comma(array)
   len = array.length
-  if len === 2
-    
+  if 2 < len
     array[-1].insert(0, "and ")
-  elsif 2 < len
+  elsif len === 2
     return "#{array[0]} and #{array[1]}"
   end
   return array.join(", ")    
